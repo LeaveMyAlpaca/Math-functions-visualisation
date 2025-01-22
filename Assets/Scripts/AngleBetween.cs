@@ -20,6 +20,7 @@ public class AngleBetween : MonoBehaviour
         angle = GetAngleBetween(A, B);
         angleText.text = $"Angle in deg. {Math.Round(angle, 1)}";
     }
+    // https://stackoverflow.com/questions/25545856/find-angle-between-two-vectors
     public float GetAngleBetween(Vector2 A, Vector2 B)
     {
         float DotProd = Vector2.Dot(A, B);
